@@ -358,6 +358,10 @@ Setting `build.format` controls what `Astro.url` is set to during the build. Whe
 
 This means that when you create relative URLs using `new URL('./relative', Astro.url)`, you will get consistent behavior between dev and build.
 
+To prevent inconsistencies with trailing slash behaviour in dev, you can restrict the [`trailingSlash` option](#trailingslash) to `'always'` or `'never'` depending on your build format:
+- `directory` - Set `trailingSlash: 'always'`
+- `file` - Set `trailingSlash: 'never'`
+
 
 ### build.client
 
