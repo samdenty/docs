@@ -1,5 +1,5 @@
 module.exports = {
-  env: {
+  env2: {
     node: true,
     es2022: true,
     browser: true,
